@@ -1,0 +1,12 @@
+int inPin = A2;
+int val;
+void setup(){
+  pinMode(inPin, INPUT);
+  Serial.begin(9600);
+}
+void loop(){
+  analogRead(inPin);
+  int val = analogRead(inPin);
+  Serial.println(val);
+  delay(250);
+}
