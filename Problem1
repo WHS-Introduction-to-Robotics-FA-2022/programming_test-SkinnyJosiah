@@ -1,0 +1,19 @@
+int t = 13;
+int tt = 8;
+
+void setup() {
+    pinMode(t, OUTPUT);
+    pinMode(tt, OUTPUT);
+    digitalWrite(t, HIGH);
+    digitalWrite(tt, HIGH);     
+    delay(1000);
+}
+
+void loop() {
+    digitalWrite(t,HIGH);
+    digitalWrite(tt, LOW);
+    delay(200);
+    digitalWrite(t,LOW);
+    digitalWrite(tt, HIGH);
+    delay(200);
+}
