@@ -1,0 +1,16 @@
+int blu = 9;
+int grn = 10;
+int red = 11;
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(blu, OUTPUT);
+    pinMode(grn, OUTPUT);
+    pinMode(red, OUTPUT);
+}
+
+void loop() {
+  analogWrite(blu, 16);
+  analogWrite(grn, 2);
+  analogWrite(red, 128);
+}
